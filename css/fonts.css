@@ -1,0 +1,44 @@
+h1 {
+  color: #ffffff;
+  font-family: 'Raleway',sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 4rem;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+h2 {
+  color: #ffffff;
+  font-family: 'Raleway',sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 3.8rem;
+  margin: 0;
+  text-align: center;
+}
+
+
+p, td, li {
+  color: #f8f8f8;
+  font-family: 'Raleway',sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: .2em 0.5em;
+  color: #abbbd6;
+}
+
+a:hover { color: #1c1c1c; cursor:default; }
+
+@media screen and (min-width: 800px) {
+  p, td, li, a {
+    font-size: 1.2rem;
+  }
+}

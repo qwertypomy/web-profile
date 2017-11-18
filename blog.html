@@ -5,29 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Document</title>
+  <title>Blog</title>
 </head>
 <body>
-  <div class="Nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="subjects.html">Favorite "school" subjects</a></li>
-      <li><a href="programming_languages.html">Programming languages skills</a></li>
-      <li><a href="hobbies.html">Hobbies</a></li>
-      <li><a href="ai.html">Artificial Intelligence</a></li>
-      <li><a href="plans.html">Future plans</a></li>
-      <li><a href="blog.html">Blog</a></li>
-    </ul>
+  <nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="subjects.html">Favorite "school" subjects</a></li>
+        <li><a href="programming_languages.html">Programming skills</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="ai.html">Artificial Intelligence</a></li>
+        <li><a href="plans.html">Future plans</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Blog</h1>
+    <form action="#">
+      <p>Title:</p>
+      <input name="title" type="text"/>
+      <p>Message:</p>
+      <textarea name="messsage"></textarea>
+      <input class="button" type="submit" value="Submit">
+    </form>
   </div>
-
-  <h1>Blog</h1>
-  <form action="#">
-    <p>Title:</p>
-    <input name="title" type="text"/>
-    <p>Message:</p>
-    <textarea name="messsage"></textarea>
-    <input type="submit" value="Submit">
-  </form>
-
 </body>
 </html>
