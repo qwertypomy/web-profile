@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  margin: 55px auto;
+  margin: 40px auto;
   padding: 1px 15px;
   max-width: 1000px;
   background-color: #123fa7;
@@ -43,6 +43,13 @@ table {
 
 th, td {
     padding: 0.4rem;
+}
+
+tr:nth-child(even) {
+  background-color: #0D3183
+}
+tr:nth-child(odd) {
+  background-color: #082466
 }
 
 img {
