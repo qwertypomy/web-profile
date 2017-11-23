@@ -1,25 +1,27 @@
 @import 'fonts.css';
 @import 'burger.css';
-
 html, body {
-    height:100%;
-    max-width: 100%;
-    overflow-x: hidden;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
-
 
 html {
   box-sizing: border-box;
-  background-color: #5575BF;
 }
+
+* {
+  voice-family: paul;
+}
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
+  background-color: #5575BF;
   font-family: "Avenir Next", "Avenir", sans-serif;
   margin: 0;
-  color: #291819;
 }
 
 .container {
@@ -31,23 +33,24 @@ body {
 }
 
 table, td, th {
-    border: 1px solid #ddd;
-    text-align: left;
+  border: 1px solid #ddd;
+  text-align: left;
 }
 
 table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-bottom: 2rem;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 th, td {
-    padding: 0.4rem;
+  padding: 0.4rem;
 }
 
 tr:nth-child(even) {
   background-color: #0D3183
 }
+
 tr:nth-child(odd) {
   background-color: #082466
 }
@@ -66,15 +69,15 @@ textarea {
 }
 
 .button {
-    display: block;
-    background-color: #082466;
-    border: none;
-    color: white;
-    margin-top: 16px;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
+  display: block;
+  background-color: #082466;
+  border: none;
+  color: white;
+  margin-top: 16px;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 #menuToggle {
@@ -95,10 +98,8 @@ textarea {
   top: -7px;
   left: -5px;
   cursor: pointer;
-
   opacity: 0;
   z-index: 2;
-
   -webkit-touch-callout: none;
 }
 
@@ -112,9 +113,7 @@ textarea {
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
@@ -125,18 +124,18 @@ textarea {
   transform-origin: 0% 100%;
 }
 
-#menuToggle input:checked ~ span {
+#menuToggle input:checked~span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #fff;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3) {
+#menuToggle input:checked~span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2) {
+#menuToggle input:checked~span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -151,7 +150,7 @@ textarea {
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
   border-radius: 10px;
 }
 
@@ -160,7 +159,7 @@ textarea {
   font-size: 22px;
 }
 
-#menuToggle input:checked ~ ul {
+#menuToggle input:checked~ul {
   transform: none;
 }
 
@@ -169,16 +168,26 @@ textarea {
     border-radius: 20px;
     padding: 1px 25px;
   }
-
   th, td {
-      padding: 1rem;
+    padding: 1rem;
   }
-
   img {
     width: 400px;
   }
-
   #menu {
     width: 360px;
+  }
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+  nav {
+    display: none !important;
+  }
+  * {
+    background-color: #fff !important;
+    color: #000 !important;
   }
 }
