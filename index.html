@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Home</title>
 </head>
 
@@ -32,69 +32,79 @@
   <div class="container">
     <h1>Home page</h1>
     <img src="img/image.png" alt="Podvalnyi Mikhail">
-    <h2>Personal info:</h2>
-    <table>
-      <tr>
-        <td><i>Name:</i></td>
-        <td>Podvalnyi Mikhail Yurievich</td>
-      </tr>
-      <tr>
-        <td><i>Gender:</i></td>
-        <td>Male</td>
-      </tr>
-      <tr>
-        <td><i>Age:</i></td>
-        <td>19</td>
-      </tr>
-      <tr>
-        <td><i>Current city:</i></td>
-        <td>Kharkiv, Ukraine</td>
-      </tr>
-      <tr>
-        <td><i>Email:</i></td>
-        <td>
-          <address>
-            <a href="mailto:mykhailo.pidvalnyi@nure.ua">mykhailo.pidvalnyi@nure.ua</a>
-          </address>
-        </td>
-      </tr>
-    </table>
+    <input type="checkbox" id="personal-info" class="hide" />
+    <label for="personal-info"><h2>Personal info</h2></label>
+    <div>
+      <table>
+        <tr>
+          <td><i>Name:</i></td>
+          <td>Podvalnyi Mikhail Yurievich</td>
+        </tr>
+        <tr>
+          <td><i>Gender:</i></td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td><i>Age:</i></td>
+          <td>19</td>
+        </tr>
+        <tr>
+          <td><i>Current city:</i></td>
+          <td>Kharkiv, Ukraine</td>
+        </tr>
+        <tr>
+          <td><i>Email:</i></td>
+          <td>
+            <address>
+              <a href="mailto:mykhailo.pidvalnyi@nure.ua">mykhailo.pidvalnyi@nure.ua</a>
+            </address>
+          </td>
+        </tr>
+      </table>
+    </div>
 
-    <h2>Education:</h2>
-    <table>
-      <tr>
-        <td><i>Primary education:</i></dt>
-          <td>School №160</dt>
-            <td>2004-2008</td>
-      </tr>
-      <tr>
-        <td><i>Middle/High education:</i></dt>
-          <td>PML №27</dt>
-            <td>2008-2015</td>
-      </tr>
-      <tr>
+    <input type="checkbox" id="education" class="hide" />
+    <label for="education"><h2>Education</h2></label>
+    <div>
+      <table>
+        <tr>
+          <td><i>Primary education:</i></dt>
+            <td>School №160</dt>
+              <td>2004-2008</td>
+        </tr>
+        <tr>
+          <td><i>Middle/High education:</i></dt>
+            <td>PML №27</dt>
+              <td>2008-2015</td>
+        </tr>
+        <tr>
 
-        <td><i>Higher education:</i></td>
-        <td>KTURE, Computer Science</td>
-        <td>2015-</td>
-      </tr>
-    </table>
+          <td><i>Higher education:</i></td>
+          <td>KTURE, Computer Science</td>
+          <td>2015-</td>
+        </tr>
+      </table>
+    </div>
 
-    <h2>Language skills:</h2>
-    <table>
-      <tr>
-        <td><i>Russian:</i></td>
-        <td>Native language</td>
-      </tr>
-      <tr>
-        <td><i>Ukrainian:</i></td>
-        <td>Second language</td>
-      </tr>
-      <tr>
-        <td><i>English:</i></td>
-        <td>Upper intermediate</td>
-      </tr>
-    </table>
+    <input type="checkbox" id="language-skills" class="hide" />
+    <label for="language-skills"><h2>Language skills</h2></label>
+    <div>
+      <table>
+        <tr>
+          <td><i>Russian:</i></td>
+          <td>Native language</td>
+        </tr>
+        <tr>
+          <td><i>Ukrainian:</i></td>
+          <td>Second language</td>
+        </tr>
+        <tr>
+          <td><i>English:</i></td>
+          <td>Upper intermediate</td>
+        </tr>
+      </table>
+    </div>
+
   </div>
 </body>
 

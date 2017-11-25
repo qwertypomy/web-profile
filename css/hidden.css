@@ -1,0 +1,25 @@
+.hide {
+  display: none;
+}
+
+.hide+label {
+  cursor: pointer;
+}
+
+.hide+label~div {
+  display: none;
+}
+
+.hide:checked+label+div {
+  display: block;
+}
+
+.hide+label>h2:before {
+  color: #fff;
+  content: "\002B";
+  margin-right: 0.5em;
+}
+
+.hide:checked+label>h2:before {
+  content: "\2212";
+}

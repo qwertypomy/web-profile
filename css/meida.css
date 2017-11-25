@@ -1,0 +1,32 @@
+@media screen and (min-width: 800px) {
+  .container {
+    margin-top: 62px;
+    border-radius: 20px;
+    padding: auto 25px;
+  }
+  nav {
+    position: fixed;
+  }
+  td {
+    padding: 1rem;
+  }
+  img {
+    width: 400px;
+  }
+  #menu {
+    width: 360px;
+  }
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+  }
+  nav {
+    display: none !important;
+  }
+  * {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+}

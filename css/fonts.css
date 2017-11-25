@@ -1,5 +1,5 @@
 h1 {
-  color: #ffffff;
+  color: #fff;
   font-family: 'Raleway', sans-serif;
   font-size: 2.2rem;
   font-weight: 800;
@@ -10,13 +10,13 @@ h1 {
 }
 
 h2 {
-  color: #ffffff;
+  color: #fff;
   font-family: 'Raleway', sans-serif;
   font-size: 2rem;
   font-weight: 800;
   line-height: 3.8rem;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 p, td, li {
@@ -34,8 +34,7 @@ a {
 }
 
 a:hover {
-  color: #1c1c1c;
-  cursor: default;
+  color: #fff;
 }
 
 @media screen and (min-width: 800px) {
