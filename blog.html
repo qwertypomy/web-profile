@@ -32,14 +32,28 @@
 
   <div class="container">
     <h1>Blog</h1>
-    <form action="#">
-      <p>Title:</p>
-      <input name="title" type="text" />
-      <p>Message:</p>
-      <textarea name="messsage"></textarea>
-      <input class="button" type="submit" value="Submit">
+
+    <form>
+      <div class="field">
+        <label>E-mail*</label>
+        <input name="email" type="email" class="text-input" />
+      </div>
+      <div class="field">
+        <label>Phone number</label>
+        <input name="phone" type="text" class="text-input" />
+      </div>
+      <div class="field">
+        <label>Title*</label>
+        <input name="title" type="text" class="text-input" />
+      </div>
+      <div class="field">
+        <label>Message*</label>
+        <textarea name="messsage" class="text-input"></textarea>
+      </div>
+      <input class="button" type="submit" />
     </form>
   </div>
 </body>
+<script type="text/javascript" src="./js/validation.js"></script>
 
 </html>

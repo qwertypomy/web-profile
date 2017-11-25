@@ -1,3 +1,10 @@
+p, td, li, label {
+  color: #f8f8f8;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 h1 {
   color: #fff;
   font-family: 'Raleway', sans-serif;
@@ -19,17 +26,9 @@ h2 {
   text-align: left;
 }
 
-p, td, li {
-  color: #f8f8f8;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
 a {
   font-size: 1rem;
   text-decoration: none;
-  padding: .2em 0.5em;
   color: #abbbd6;
 }
 

@@ -4,7 +4,6 @@
 @import 'tables.css';
 @import 'hidden.css';
 @import 'hamburger_menu.css';
-
 html, body {
   height: 100%;
   max-width: 100%;
@@ -16,7 +15,7 @@ html {
 }
 
 * {
-  voice-family: paul;
+  voice-family: announcer;
 }
 
 *, *:before, *:after {
