@@ -36,6 +36,19 @@ body {
   min-height: 80%;
 }
 
+.wrapper {
+    display: table;
+    width: 100%;
+}
+.center {
+    text-align: center;
+    display: table-cell;
+}
+
+audio {
+  width: 100%;
+}
+
 @media screen and (min-width: 800px) {
   .container {
     margin-top: 62px;
@@ -48,8 +61,11 @@ body {
   td {
     padding: 1rem;
   }
-  img {
+  img:not(#modal-img), audio {
     width: 400px;
+  }
+  #modal-img {
+    width: 80%;
   }
   #menu {
     width: 360px;

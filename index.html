@@ -29,10 +29,25 @@
     </div>
   </nav>
 
+  <div id="modal">
+    <span id="modal-close">&times;</span>
+    <img id="modal-img" draggable="false">
+    <label id="modal-caption"></label>
+  </div>
+
   <div class="container">
     <h1>Home page</h1>
-    <img src="img/image.png" alt="Podvalnyi Mikhail">
-    <input type="checkbox" id="checkbox-personal-info" class="hide" />
+    <img src="img/image.png" alt="Podvalnyi Mikhail" draggable="false" />
+    <div class="wrapper">
+      <div class="center">
+        <audio controls loop>
+          <source src="content/Max Cover - Running in the 90s.ogg" type="audio/ogg">
+          <source src="content/Max Cover - Running in the 90s.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+    <input type="checkbox" id="checkbox-personal-info" class="hide" checked/>
     <label for="checkbox-personal-info"><a id="personal-info"></a><h2>Personal info</h2></label>
     <div>
       <table>
@@ -108,4 +123,6 @@
   </div>
 </body>
 <script type="text/javascript" src="./js/hotkeys.js"></script>
+<script type="text/javascript" src="./js/modal_image.js"></script>
+
 </html>
