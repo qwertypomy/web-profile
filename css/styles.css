@@ -33,16 +33,18 @@ body {
   padding: 20px 15px;
   max-width: 1000px;
   background-color: #123fa7;
-  min-height: 80%;
+  min-height: 86%;
 }
 
 .wrapper {
-    display: table;
-    width: 100%;
+  display: table;
+  width: 100%;
 }
+
 .center {
-    text-align: center;
-    display: table-cell;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 audio {
@@ -61,7 +63,7 @@ audio {
   td {
     padding: 1rem;
   }
-  img:not(#modal-img), audio {
+  audio {
     width: 400px;
   }
   #modal-img {
