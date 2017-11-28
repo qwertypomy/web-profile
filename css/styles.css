@@ -72,6 +72,13 @@ audio {
   #menu {
     width: 360px;
   }
+  .gallery-slides img {
+    display: inline-block;
+    width: 27%;
+  }
+  .gallery-slides img.main {
+    width: 40%;
+  }
 }
 
 @media print {

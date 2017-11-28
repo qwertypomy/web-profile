@@ -1,21 +1,14 @@
 .gallery img {
+  display: none;
   margin: 1rem 0.2rem;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.gallery-content {
-  display: none;
-}
-
-.gallery-slides img {
-  display: inline-block;
-  width: 27%;
-}
-
 .gallery-slides img.main {
-  width: 40%;
+  display: inline-block;
+  width: 95%;
 }
 
 #modal-img {
