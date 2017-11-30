@@ -23,13 +23,16 @@ html {
 }
 
 body {
+  margin: 0;
   background-color: #5575BF;
   font-family: "Avenir Next", "Avenir", sans-serif;
-  margin: 0;
 }
 
 .container {
-  margin: 40px auto;
+  opacity: 0;
+  margin: -600px auto;
+  transition: all 1s;
+  -webkit-transition: all 1s;
   padding: 20px 15px;
   max-width: 1000px;
   background-color: #123fa7;
@@ -53,7 +56,6 @@ audio {
 
 @media screen and (min-width: 800px) {
   .container {
-    margin-top: 62px;
     border-radius: 20px;
     padding: auto 25px;
   }
@@ -75,9 +77,13 @@ audio {
   .gallery-slides img {
     display: inline-block;
     width: 27%;
+    -webkit-filter: contrast(0.7);
+    filter: contrast(0.7);
   }
   .gallery-slides img.main {
     width: 40%;
+    -webkit-filter: contrast(1);
+    filter: contrast(1);
   }
 }
 
