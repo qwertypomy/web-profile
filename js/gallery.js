@@ -1,4 +1,4 @@
-var imgs = document.getElementsByClassName("gallery-content")[0].getElementsByTagName("img"),
+var imgs = document.getElementsByClassName('gallery-content')[0].getElementsByTagName('img'),
   imgs_len = imgs.length;
 var galleryIndex = 1;
 showGallery(galleryIndex);
@@ -22,8 +22,8 @@ function prevImg() {
 }
 
 function showGallery(n) {
-  var imgs = document.getElementsByClassName("gallery-content")[0].getElementsByTagName("img");
-  var gallery_slides = document.getElementsByClassName("gallery-slides")[0];
+  var imgs = document.getElementsByClassName('gallery-content')[0].getElementsByTagName('img');
+  var gallery_slides = document.getElementsByClassName('gallery-slides')[0];
   var left = validateIndex(n - 1),
     right = validateIndex(n + 1);
 
@@ -32,13 +32,13 @@ function showGallery(n) {
   }
 
   left_img = imgs[left].cloneNode(true);
-  left_img.className = "left";
+  left_img.className = 'left';
   gallery_slides.appendChild(left_img);
   main_img = imgs[n].cloneNode(true);
-  main_img.className = "main";
+  main_img.className = 'main';
   gallery_slides.appendChild(main_img);
   right_img = imgs[right].cloneNode(true);
-  right_img.className = "right";
+  right_img.className = 'right';
   gallery_slides.appendChild(right_img);
 
   addModalOnClick();
@@ -46,22 +46,22 @@ function showGallery(n) {
 
 function addModalOnClick() {
   var modal = document.getElementById('modal');
-  var modalImg = document.getElementById("modal-img");
-  var captionText = document.getElementById("modal-caption");
-  var span = document.getElementById("modal-close");
+  var modalImg = document.getElementById('modal-img');
+  var captionText = document.getElementById('modal-caption');
+  var span = document.getElementById('modal-close');
 
   span.onclick = function() {
-    modal.style.display = "none";
+    modal.style.display = 'none';
   }
   modalImg.onclick = function() {
-    modal.style.display = "none";
+    modal.style.display = 'none';
   }
 
-  var imgs = document.getElementsByClassName("gallery-slides")[0].getElementsByTagName('img');
+  var imgs = document.getElementsByClassName('gallery-slides')[0].getElementsByTagName('img');
 
   for (i = 0; i < imgs.length; i++) {
     imgs[i].onclick = function() {
-      modal.style.display = "block";
+      modal.style.display = 'block';
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
     }

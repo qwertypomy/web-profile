@@ -28,10 +28,14 @@ body {
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
+nav {
+  height: 62px;
+}
+
 .container {
   opacity: 0;
-  margin: -600px auto;
-  transition: all 1s;
+  margin: -62px auto;
+  transition: all 0.5s;
   -webkit-transition: all 1s;
   padding: 20px 15px;
   max-width: 1000px;
@@ -56,10 +60,11 @@ audio {
 
 @media screen and (min-width: 800px) {
   .container {
+    margin: -40px auto;
     border-radius: 20px;
     padding: auto 25px;
   }
-  nav {
+  #menuToggle {
     position: fixed;
   }
   td {

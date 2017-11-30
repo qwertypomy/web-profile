@@ -11,42 +11,42 @@ function validateEmail(value){
 }
 
 function validate() {
-  var form = document.getElementsByTagName("form")[0],
-      emailInput = document.getElementsByName("email")[0],
-      phoneInput = document.getElementsByName("phone")[0],
-      titleInput = document.getElementsByName("title")[0],
-      messageInput = document.getElementsByName("messsage")[0];
+  var form = document.getElementsByTagName('form')[0],
+      emailInput = document.getElementsByName('email')[0],
+      phoneInput = document.getElementsByName('phone')[0],
+      titleInput = document.getElementsByName('title')[0],
+      messageInput = document.getElementsByName('messsage')[0];
   form.addEventListener('submit', function(e){
     e.preventDefault();
 
     var emailValid = validateEmail(emailInput.value),
-        phoneValid = !validateRequired(emailInput.value) || validatePhone(phoneInput.value),
+        phoneValid = !validateRequired(phoneInput.value) || validatePhone(phoneInput.value),
         titleValid = validateRequired(titleInput.value),
         messageValid = validateRequired(messageInput.value);
 
-    var emailField = emailInput.closest(".field");
+    var emailField = emailInput.closest('.field');
     if (emailValid) {
-      emailField.className = "field";
+      emailField.className = 'field';
     } else {
-      emailField.className = "field error";
+      emailField.className = 'field error';
     }
-    var phoneField = phoneInput.closest(".field");
+    var phoneField = phoneInput.closest('.field');
     if (phoneValid) {
-      phoneField.className = "field";
+      phoneField.className = 'field';
     } else {
-      phoneField.className = "field error";
+      phoneField.className = 'field error';
     }
-    var titleField = titleInput.closest(".field");
+    var titleField = titleInput.closest('.field');
     if (titleValid) {
-      titleField.className = "field";
+      titleField.className = 'field';
     } else {
-      titleField.className = "field error";
+      titleField.className = 'field error';
     }
-    var messageField = messageInput.closest(".field");
+    var messageField = messageInput.closest('.field');
     if (messageValid) {
-      messageField.className = "field";
+      messageField.className = 'field';
     } else {
-      messageField.className = "field error";
+      messageField.className = 'field error';
     }
   }, false)
 }
