@@ -9,6 +9,7 @@ var pathArr = window.location.pathname.split( '/' ),
 pageName = pathArr[pathArr.length - 1];
 
 switch(pageName) {
+  case '':
   case 'index.html':
     dynamicallyLoadScript('js/hotkeys.js');
     dynamicallyLoadScript('js/gallery.js');
