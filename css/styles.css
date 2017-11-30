@@ -33,8 +33,9 @@ nav {
 }
 
 .container {
+  margin: 40px auto;
   opacity: 0;
-  margin: -62px auto;
+  margin-top: -62px;
   transition: all 0.7s;
   -webkit-transition: all 0.7s;
   padding: 20px 15px;
@@ -60,7 +61,6 @@ audio {
 
 @media screen and (min-width: 800px) {
   .container {
-    margin: -40px auto;
     border-radius: 20px;
     padding: auto 25px;
   }

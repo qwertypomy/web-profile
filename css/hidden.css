@@ -6,11 +6,11 @@
   cursor: pointer;
 }
 
-.hide+label~div {
+.hide+label~article {
   display: none;
 }
 
-.hide:checked+label+div {
+.hide:checked+label+article {
   display: block;
 }
 

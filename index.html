@@ -29,15 +29,15 @@
     </div>
   </nav>
 
-  <div id="modal">
+  <figure id="modal">
     <span id="modal-close">&times;</span>
     <img id="modal-img" draggable="false">
-    <label id="modal-caption"></label>
-  </div>
+    <figcaption id="modal-caption"></figcaption>
+  </figure>
 
-  <div class="container">
+  <section class="container">
     <h1>Home page</h1>
-    <div class="gallery wrapper">
+    <article class="gallery wrapper">
       <a class="prev center" onclick="prevImg()">&#10094;</a>
       <div class="gallery-content">
         <img src="img/photo1.jpg" alt="Makoa" draggable="false" />
@@ -45,11 +45,10 @@
         <img src="img/photo2.jpg" alt="Gopher" draggable="false" />
         <img src="img/photo3.jpg" alt="My Favourite Teacher" draggable="false" />
       </div>
-      <div class="gallery-slides center">
-      </div>
+      <div class="gallery-slides center"></div>
       <a class="next center" onclick="nextImg()">&#10095;</a>
-    </div>
-    <div class="wrapper">
+    </article>
+    <article class="audio wrapper">
       <div class="center">
         <audio controls autoplay loop>
           <source src="content/Max Cover - Running in the 90s.ogg" type="audio/ogg">
@@ -57,10 +56,10 @@
           Your browser does not support the audio element.
         </audio>
       </div>
-    </div>
+    </article>
     <input type="checkbox" id="checkbox-personal-info" class="hide" checked/>
     <label for="checkbox-personal-info"><a id="personal-info"></a><h2>Personal info</h2></label>
-    <div>
+    <article>
       <table>
         <tr>
           <td><i>Name:</i></td>
@@ -87,21 +86,21 @@
           </td>
         </tr>
       </table>
-    </div>
+    </article>
 
     <input type="checkbox" id="checkbox-education" class="hide" />
     <label for="checkbox-education"><a id="education"></a><h2>Education</h2></label>
-    <div>
+    <article>
       <table>
         <tr>
-          <td><i>Primary education:</i></dt>
-            <td>School №160</dt>
-              <td>2004-2008</td>
+          <td><i>Primary education:</i></td>
+          <td>School №160</td>
+          <td>2004-2008</td>
         </tr>
         <tr>
-          <td><i>Middle/High education:</i></dt>
-            <td>PML №27</dt>
-              <td>2008-2015</td>
+          <td><i>Middle/High education:</i></td>
+          <td>PML №27</td>
+          <td>2008-2015</td>
         </tr>
         <tr>
 
@@ -110,11 +109,11 @@
           <td>2015-</td>
         </tr>
       </table>
-    </div>
+    </article>
 
     <input type="checkbox" id="checkbox-language-skills" class="hide" />
     <label for="checkbox-language-skills"><a id="language-skills"></a><h2>Language skills</h2></label>
-    <div>
+    <article>
       <table>
         <tr>
           <td><i>Russian:</i></td>
@@ -129,9 +128,9 @@
           <td>Upper intermediate</td>
         </tr>
       </table>
-    </div>
+    </article>
 
-  </div>
+  </section>
 
   <script type="text/javascript" src="./js/index.js"></script>
 </body>
