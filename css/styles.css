@@ -55,6 +55,10 @@ nav {
   vertical-align: middle;
 }
 
+canvas {
+  margin: 10px;
+}
+
 audio {
   width: 100%;
 }

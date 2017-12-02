@@ -14,6 +14,7 @@ switch(pageName) {
     dynamicallyLoadScript('js/hotkeys.js');
     dynamicallyLoadScript('js/gallery.js');
     dynamicallyLoadScript('js/appearance.js');
+    dynamicallyLoadScript('js/canvas.js');
     break;
   case 'blog.html':
     dynamicallyLoadScript('js/validation.js');
