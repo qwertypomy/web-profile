@@ -1,89 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="blog.xsl"?>
+<!DOCTYPE note SYSTEM "blog.dtd">
 <blog>
   <post post_id='1'>
     <author author_id='1'>
       <full_name>Podvalnyi Mikhail</full_name>
       <email>mykhailo.pidvalnyi@nure.ua</email>
     </author>
-
     <date>2017-11-30</date>
     <time>13:15:30</time>
-
     <title>Welcome</title>
     <body>I greet you!</body>
-
     <tag>Mikhail</tag>
     <tag>Welcome</tag>
     <tag>Greetings</tag>
-
     <file src="./../img/me.jpg" type="image"/>
     <file src="./../img/photo1.jpg" type="image"/>
-
     <comment comment_id='1'>
       <author author_id='2'>
         <full_name>Chebyshev Pafnuty</full_name>
         <email>сhebyshev@gmail.com</email>
       </author>
-
       <date>2017-11-30</date>
       <time>13:17:20</time>
-
       <body>Hello there! =)</body>
     </comment>
-
     <comment comment_id='2'>
       <author author_id='3'>
         <full_name>Andrew Parhomenko</full_name>
         <email>andrew.par@gmail.com</email>
       </author>
-
       <date>2017-12-01</date>
       <time>17:25:30</time>
-
       <body>Greetings!</body>
     </comment>
   </post>
-
-
   <post post_id='2'>
     <author author_id='1'>
       <full_name>Podvalnyi Mikhail</full_name>
       <email>mykhailo.pidvalnyi@nure.ua</email>
     </author>
-
     <date>2017-12-03</date>
     <time>09:10:03</time>
-
     <title>Tesla Semi</title>
     <body>It can transform into a robot, fight aliens and make one hell of a latte.</body>
-
     <tag>Tesla</tag>
     <tag>Semi</tag>
-
     <file src="./../img/tesla_semi.jpg" type="image"/>
-
     <comment comment_id='3'>
       <author author_id='4'>
         <full_name>Taylor Harris</full_name>
         <email>harristaylor@gmail.com</email>
       </author>
-
       <date>2017-12-03</date>
       <time>13:20:00</time>
-
       <body>SOLD!</body>
     </comment>
-
     <comment comment_id='4'>
       <author author_id='2'>
         <full_name>Pafnuty Lvovich Chebyshev</full_name>
         <email>сhebyshev@gmail.com</email>
       </author>
-
       <date>2017-12-03</date>
       <time>14:55:17</time>
-
       <body>How many tons can this take?</body>
     </comment>
   </post>
