@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <body style='font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14pt;background-color: #e5ebef;'>
-    <section style="background-color:#fff;max-width: 760px;margin: 40pt auto; padding: 8pt;">
+    <section style="background-color:#fff;max-width: 760px;margin: 40pt auto; padding: 20pt;">
       <h1 style="text-align: center;">Blog</h1>
 
       <xsl:for-each select="blog/post">
